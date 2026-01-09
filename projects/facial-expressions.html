@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://use.typekit.net/kyi6vir.css" />
+        <link rel="stylesheet" href="/styles.css" />
+        <title>Facial Expressions - Hanna's Portfolio</title>
+    </head>
+    <body class="projects">
+        <div class="container">
+            <h1 class="project-title">Facial Expressions</h1>
+            <div class="project-description">
+                I’ve always loved drawing faces and expressing emotions through
+                them. In this project, I explored how to translate my own
+                negative feelings into portraits using my personal,
+                comic-inspired style. Working with simplified forms, exaggerated
+                features, and a very limited color palette, the series became a
+                personal and enjoyable way to process emotions through
+                <span class="highlight">drawing</span>.
+            </div>
+            <div class="project-showcase">
+                <div style="position: relative">
+                    <div class="showcase-text">Look through the pics!</div>
+                    <img
+                        src="/assets/hanni-pointing.png"
+                        alt="Hanna pointing"
+                        class="pointing-image"
+                    />
+                </div>
+                <div>
+                    <section class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img
+                                        src="/assets/facial-expressions/expression1.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="/assets/facial-expressions/expression2.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="/assets/facial-expressions/expression3.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="/assets/facial-expressions/expression4.png"
+                                        alt=""
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <a href="/projects.html" class="postit projects-postit-4"
+                >Back to the projects!</a
+            >
+            <a href="/about-me.html" class="postit aboutme-postit-2"
+                >More about me</a
+            >
+        </div>
+        <button id="toggle-draw">Toggle Drawing mode</button>
+        <canvas id="surface"></canvas>
+        <script src="/draw.js"></script>
+        <script src="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+        "></script>
+        <link
+            href="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+        "
+            rel="stylesheet"
+        />
+        <style>
+            .splide {
+                width: 100%;
+                max-width: 500px;
+            }
+
+            .splide__slide img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            @media (max-width: 700px) {
+                .project-showcase {
+                    flex-direction: column;
+                    gap: 30px;
+                }
+
+                .splide {
+                    max-width: 100%;
+                }
+            }
+        </style>
+        <script>
+            new Splide(".splide", {
+                perPage: 1,
+                type: "loop",
+                gap: "1rem",
+                padding: { left: 0, right: 0 },
+            }).mount();
+        </script>
+    </body>
+</html>

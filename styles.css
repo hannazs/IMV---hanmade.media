@@ -1,0 +1,746 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image:
+        linear-gradient(to right, #fff 5px, transparent 1px),
+        linear-gradient(rgba(155, 143, 167, 0.43), 3px, transparent 1px),
+        url(/assets/paper-bg.png);
+    background-size:
+        100% 60px,
+        100% 60px,
+        cover;
+    font-family: "shantell-sans-bouncy", sans-serif;
+    padding-bottom: 200px;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+}
+
+a {
+    z-index: 50;
+    position: relative;
+}
+
+.intro-text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 600px;
+    font-size: 64px;
+}
+.arrow-image {
+    position: absolute;
+    width: 297px;
+    height: 184px;
+    left: 50%;
+    top: calc(50% + 250px);
+    z-index: -1;
+}
+
+.waving-image {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    z-index: -1;
+}
+
+.postit {
+    background-color: #d7c4f2;
+    box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    display: inline-flex;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 340px;
+    transition: all 0.2s ease-in-out;
+    z-index: 20;
+    font-size: 48px;
+}
+
+.postit:hover {
+    box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.35);
+    translate: 0 -4px;
+}
+
+.aboutme-postit {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-size: 32px;
+    padding: 20px;
+    transform: rotate(10deg);
+    font-weight: semi-bold;
+    line-height: 1.2;
+}
+
+.projects-postit {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    font-size: 32px;
+    padding: 20px;
+    transform: rotate(-12deg);
+    font-weight: semi-bold;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "imaginaryfriend-bb", sans-serif;
+}
+
+.highlight {
+    background-image: linear-gradient(
+        to right,
+        rgba(228, 213, 242, 0.88),
+        rgba(228, 213, 242, 0.88)
+    );
+    background-size: 100% 1.1em;
+    background-repeat: no-repeat;
+    background-position: 0 0.3em;
+    padding: 0.1em 0.3em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+.about-me {
+    margin-top: 100px;
+    padding-bottom: 500px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.polaroid-hanni {
+    width: 800px;
+    height: 800px;
+    z-index: -1;
+}
+
+.illu-hanni {
+    width: 545px;
+    height: 545px;
+}
+
+.about-me-pics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.polaroid-hanni-container {
+    position: relative;
+}
+.about-me-title {
+    position: absolute;
+    font-size: 96px;
+    rotate: -17deg;
+    left: 290px;
+    top: 470px;
+}
+
+.about-me-text {
+    font-size: 36px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.viecher-image {
+    width: 497px;
+    height: 544px;
+}
+
+.buns-image {
+    width: 433px;
+    height: 429px;
+}
+
+.contact-postit {
+    transform: translateX(-50%) rotate(5deg);
+    font-size: 32px;
+    padding: 20px;
+    font-weight: semi-bold;
+    line-height: 1.2;
+    position: absolute;
+}
+
+.projects-postit-2 {
+    position: absolute;
+    right: -100px;
+    font-size: 32px;
+    padding: 20px;
+    transform: rotate(-12deg);
+    font-weight: semi-bold;
+    line-height: 1.2;
+}
+
+.sitting-image {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    bottom: 100px;
+    left: 15%;
+    z-index: -1;
+}
+
+.projects-postit-3 {
+    position: absolute;
+    right: 250px;
+    bottom: 250px;
+    padding: 20px;
+    transform: rotate(-12deg);
+    font-weight: semi-bold;
+    line-height: 1.2;
+}
+
+#surface {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    z-index: 99999;
+    cursor:
+        url("data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKHmAML1/wBxRMkAfXpwALGK/wDHt6EAAN3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAAAAAAAAAAAAAAAAAAzVQAAAAAAAAAAAAAAAAAGBVVQAAAAAAAAAAAAAAAABGBVUAAAAAAAAAAAAAAAARBGBQAAAAAAAAAAAAAAABF3BGAAAAAAAAAAAAAAAAEXcXAAAAAAAAAAAAAAAAARdxdwAAAAAAAAAAAAAAABF3F3AAAAAAAAAAAAAAAAEXcXcAAAAAAAAAAAAAAAARdxdwAAAAAAAAAAAAAAABF3F3AAAAAAAAAAAAAAAAEXcXcAAAAAAAAAAAAAAAABdxdwAAAAAAAAAAAAAAAAInF3AAAAAAAAAAAAAAAAACIncAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////////////////////////////////////////////////////////z////4f///8D///+Af///AH///gD///wB///4A///8Af//+AP///AH///gD///wB///4A///+Af///AP///wH///8D////D////w=="),
+        auto;
+}
+
+.drawing #surface {
+    pointer-events: all;
+}
+.project-title {
+    font-size: 96px;
+    text-align: center;
+}
+
+.project-description {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.project-showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    gap: 40px;
+}
+
+.pointing-image {
+    width: 616px;
+    height: 718px;
+    margin-left: -100px;
+    flex-shrink: 0;
+}
+
+.projects-postit-4 {
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    transform: rotate(-12deg);
+    font-weight: semi-bold;
+    line-height: 1.2;
+}
+
+.aboutme-postit-2 {
+    position: absolute;
+    right: 0;
+    margin-top: 100px;
+    padding: 20px;
+    transform: rotate(10deg);
+    font-weight: semi-bold;
+    line-height: 1.2;
+}
+
+.illu-hanni {
+    margin-left: -100px;
+}
+
+.project-item {
+    display: block;
+    max-width: 600px;
+    width: 45%;
+    transition: transform 0.5s ease;
+    position: relative;
+    text-decoration: none;
+}
+.project-item > div {
+    font-family: "imaginaryfriend-bb", sans-serif;
+    font-size: 36px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    bottom: 100px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    line-height: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+    transform-origin: center center;
+}
+.project-item:nth-child(1) {
+    transform: rotate(-10deg);
+}
+
+#toggle-draw {
+    position: absolute;
+    z-index: 999999;
+    appearance: none;
+    border: none;
+    background: none;
+    max-width: 80px;
+    right: 50px;
+    top: 20px;
+}
+
+.button-icon {
+    width: 100px;
+    cursor: pointer;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .project-item:nth-child(1):hover {
+        z-index: 20;
+        transform: rotate(-10deg) scale(1.05);
+    }
+
+    .project-item:nth-child(2):hover {
+        z-index: 20;
+        transform: rotate(3deg) translate(0, 50px) scale(1.05);
+    }
+
+    .project-item:nth-child(3):hover {
+        z-index: 20;
+        transform: rotate(11deg) translate(-50px, 0) scale(1.05);
+    }
+
+    .project-item:nth-child(4):hover {
+        z-index: 20;
+        transform: rotate(-5deg) translate(0, 90px) scale(1.05);
+    }
+
+    .project-item:nth-child(5):hover {
+        z-index: 20;
+        transform: rotate(-3deg) scale(1.05);
+    }
+
+    .project-item:nth-child(6):hover {
+        z-index: 20;
+        transform: rotate(2deg) translate(-40px, 40px) scale(1.05);
+    }
+}
+
+.project-item:nth-child(2) {
+    transform: rotate(3deg) translate(0, 50px);
+}
+
+.project-item:nth-child(3) {
+    transform: rotate(11deg) translate(-50px, 0);
+}
+
+.project-item:nth-child(4) {
+    transform: rotate(-5deg) translate(0, 90px);
+}
+
+.project-item:nth-child(5) {
+    transform: rotate(-3deg);
+}
+
+.project-item:nth-child(6) {
+    transform: rotate(2deg) translate(-40px, 40px);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    image-orientation: none;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.projects .contact-postit {
+    transform: translateX(50px) rotate(5deg) !important;
+}
+
+.projects .aboutme-postit-2 {
+    transform: translateX(-100px) rotate(10deg) !important;
+}
+
+.showcase-text {
+    position: absolute;
+    rotate: 45deg;
+    font-size: 32px;
+    font-weight: 500;
+    right: 50px;
+    top: 40px;
+    max-width: 200px;
+    line-height: 1.2em;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.arrow-kurve {
+    position: absolute;
+    left: 50%;
+    top: 350px;
+    transform: translateX(-50%);
+}
+
+@media all and (max-width: 1800px) {
+    .postit {
+        width: 250px;
+        height: 250px;
+        font-size: 24px;
+    }
+
+    .aboutme-postit {
+        top: 50px;
+        left: 100px;
+    }
+
+    .waving-image {
+        width: 500px;
+        height: 500px;
+        bottom: 50px;
+        left: 5%;
+    }
+
+    .projects-postit {
+        bottom: 100px;
+        right: 5%;
+    }
+
+    .sitting-image {
+        width: 500px;
+        height: 500px;
+        bottom: 100px;
+        left: 10px;
+    }
+
+    .projects-postit-3 {
+        right: 150px;
+        bottom: 150px;
+    }
+
+    .pointing-image {
+        width: 500px;
+        height: auto;
+        margin-left: -80px;
+    }
+
+    .polaroid-hanni {
+        width: 600px;
+        height: 600px;
+        margin-left: -100px;
+    }
+
+    .about-me-title {
+        font-size: 72px;
+        left: 120px;
+        top: 350px;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .intro-text {
+        font-size: 44px;
+        max-width: 600px;
+    }
+
+    .arrow-image {
+        width: 200px;
+        height: 124px;
+        top: calc(50% + 150px);
+    }
+
+    .waving-image {
+        width: 400px;
+        height: 400px;
+        bottom: 100px;
+        left: 5%;
+    }
+
+    .sitting-image {
+        width: 400px;
+        height: 400px;
+        bottom: 100px;
+        left: 100px;
+    }
+    .viecher-image {
+        width: 300px;
+        height: 300px;
+    }
+    .buns-image {
+        width: 300px;
+        height: 300px;
+    }
+    .illu-hanni {
+        width: 400px;
+        height: 400px;
+        margin-left: -80px;
+    }
+    .polaroid-hanni {
+        width: 400px;
+        height: 400px;
+        margin-left: 0;
+    }
+    .about-me-title {
+        font-size: 48px;
+        left: 140px;
+        top: 230px;
+    }
+
+    .contact-postit {
+        transform: rotate(5deg);
+    }
+    .projects-postit-2 {
+        right: 20px;
+    }
+    .projects-postit-4 {
+        left: 40px;
+    }
+    .aboutme-postit-2 {
+        right: 20px;
+    }
+    .project-description {
+        font-size: 24px;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    .pointing-image {
+        width: 300px;
+        height: auto;
+        margin-left: -50px;
+    }
+
+    .project-list {
+        margin-top: 100px;
+        flex-wrap: nowrap !important;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-item {
+        width: 400px !important;
+        max-width: none !important;
+    }
+    .project-item:nth-child(1) {
+        transform: rotate(-10deg);
+    }
+
+    .project-item:nth-child(2) {
+        transform: rotate(3deg) translate(0, 0);
+    }
+
+    .project-item:nth-child(3) {
+        transform: rotate(11deg) translate(0, 0);
+    }
+
+    .project-item:nth-child(4) {
+        transform: rotate(-5deg) translate(0, 0);
+    }
+
+    .project-item:nth-child(5) {
+        transform: rotate(-3deg);
+    }
+
+    .project-item:nth-child(6) {
+        transform: rotate(2deg) translate(0, 0);
+    }
+    .project-item > div {
+        font-size: 24px;
+        bottom: 70px;
+        max-width: 250px;
+    }
+
+    .showcase-text {
+        font-size: 24px;
+    }
+
+    .arrow-kurve {
+        top: 250px;
+        width: 150px;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .intro-text {
+        left: 0;
+        right: 0;
+        width: 100%;
+        transform: none;
+        top: 230px;
+        font-size: 38px;
+    }
+
+    .waving-image {
+        bottom: -30px;
+        left: -80px;
+    }
+
+    .arrow-image {
+        display: none;
+    }
+
+    .postit {
+        width: 120px;
+        height: 120px;
+        font-size: 20px;
+    }
+
+    .aboutme-postit {
+        top: 20px;
+        left: 20px;
+    }
+
+    .polaroid-hanni {
+        width: 300px;
+        height: 300px;
+        margin-left: -80px;
+    }
+
+    .about-me-title {
+        font-size: 24px;
+        left: 50px;
+        top: 200px;
+    }
+
+    .illu-hanni {
+        width: 200px;
+        height: 200px;
+        margin-left: -50px;
+    }
+
+    .about-me-text {
+        font-size: 20px;
+    }
+    .about-me {
+        margin-top: 30px;
+    }
+    .viecher-image {
+        width: 180px;
+        height: 180px;
+    }
+    .buns-image {
+        width: 180px;
+        height: 180px;
+    }
+    .contact-postit {
+        width: 100px;
+        height: 100px;
+        transform: rotate(5deg);
+    }
+    .projects-postit-2 {
+        right: 40px;
+        width: 100px;
+        height: 100px;
+        font-size: 18px;
+    }
+
+    .sitting-image {
+        width: 300px;
+        height: 300px;
+        bottom: 30px;
+        left: 10%;
+        pointer-events: none;
+    }
+    .projects-postit-3 {
+        right: 50px;
+        top: 50px;
+        width: 100px;
+        height: 100px;
+        font-size: 18px;
+    }
+
+    .project-title {
+        font-size: 48px;
+    }
+    .project-description {
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .project-showcase {
+        flex-direction: column;
+    }
+    .pointing-image,
+    .showcase-text {
+        display: none;
+    }
+
+    .projects .contact-postit {
+        transform: rotate(5deg) !important;
+    }
+
+    .projects .aboutme-postit-2 {
+        transform: rotate(10deg) !important;
+    }
+
+    .arrow-kurve {
+        top: 250px;
+        width: 100px;
+    }
+
+    #toggle-draw {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1100px) and (min-width: 701px) {
+    .pointing-image {
+        width: 400px;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+@media all and (max-height: 800px) and (max-width: 700px) {
+    .waving-image {
+        width: 300px;
+        height: 300px;
+        left: -50px;
+    }
+
+    .projects-postit {
+        bottom: 50px;
+    }
+
+    .intro-text {
+        font-size: 32px;
+    }
+
+    .sitting-image {
+        width: 250px;
+        height: 250px;
+        bottom: 10px;
+    }
+}

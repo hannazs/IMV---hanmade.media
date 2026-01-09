@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://use.typekit.net/kyi6vir.css" />
+        <link rel="stylesheet" href="/styles.css" />
+        <title>Mard - Hanna's Portfolio</title>
+    </head>
+    <body class="projects">
+        <div class="container">
+            <h1 class="project-title">Mard</h1>
+            <div class="project-description">
+                I worked on the music video for ”Mard” by Iranian singer Ladan.
+                I was responsible for the
+                <span class="highlight">final cut</span>, edited a teaser for
+                the release, and handled color
+                <span class="highlight"> correction and grading</span>. This
+                project taught me a lot about editing workflows and how much
+                impact color grading can have on the overall mood of a video.
+            </div>
+            <div class="project-showcase">
+                <div style="position: relative">
+                    <div class="showcase-text">Here's the full video</div>
+                    <img
+                        src="/assets/hanni-pointing.png"
+                        alt="Hanna pointing"
+                        class="pointing-image"
+                    />
+                </div>
+                <div style="flex: 1; min-width: 0; width: 100%">
+                    <iframe
+                        style="width: 100%; aspect-ratio: 16 / 9"
+                        src="https://www.youtube.com/embed/FzMRkIgC3H0"
+                        title="Ladan - Mard OFFICIAL VIDEO | لادن - مَرد"
+                        frameborder="0"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+            <a href="/projects.html" class="postit projects-postit-4"
+                >Back to the projects!</a
+            >
+            <a href="/about-me.html" class="postit aboutme-postit-2"
+                >More about me</a
+            >
+        </div>
+        <button id="toggle-draw">Toggle Drawing mode</button>
+        <canvas id="surface"></canvas>
+        <script src="/draw.js"></script>
+    </body>
+</html>
