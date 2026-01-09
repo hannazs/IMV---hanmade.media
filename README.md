@@ -1,7 +1,7 @@
 # Hanmade Media – Portfolio
 
 ## Kurzbeschreibung
-In meinem letzten IM-Projekt ging es für mich vor allem darum, das bisher Gelernte aufzufrischen. Gleichzeitig wollte ich mir für die anstehende Jobsuche eine eigene Portfolio-Website bauen. Mir war dabei wichtig, nicht nur meine Arbeiten zu zeigen, sondern auch meinen Charakter und Stil mit einzubringen. So ist hanmade.media entstanden: Ein persönliches, handgezeichnetes Portfolio mit interaktiven Elementen.
+In meinem letzten IM-Projekt ging es für mich vor allem darum, das bisher Gelernte aufzufrischen. Gleichzeitig wollte ich mir für die anstehende Jobsuche eine eigene Portfolio-Website bauen. Mir war dabei wichtig, nicht nur meine Arbeiten zu zeigen, sondern auch meinen Charakter und Stil mit einzubringen. So ist [hanmade.media](https://hanmade.media) entstanden (klicken für Live Version): Ein persönliches, handgezeichnetes Portfolio mit interaktiven Elementen.
 
 ## Schwierigkeiten
 - Das Positionieren von Bildern und Texten in Relation zueinander war komplex, vor allem mit vielen absolut platzierten Elementen.  
